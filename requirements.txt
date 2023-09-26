@@ -1,0 +1,7 @@
+loguru
+numpy
+pandas
+plotly
+scikit-learn
+torch
+tqdm

@@ -1,0 +1,8 @@
+pre-commit
+ruff
+black
+black[jupyter]
+ipython
+ipywidgets
+jupyterlab
+pytest
