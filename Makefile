@@ -27,8 +27,7 @@ $(EGG): $(PYTHON) setup.py requirements.txt requirements-dev.txt
 	$(VENV_NAME)/bin/pre-commit install
 
 $(PYTHON):
-	$(SYSTEM_PYTHON) -m pip install virtualenv
-	$(SYSTEM_PYTHON) -m virtualenv $(VENV_NAME)
+	$(SYSTEM_PYTHON) -m venv $(VENV_NAME)
 
 # For rebuilding python environment from scratch
 destroy-setup: confirm
