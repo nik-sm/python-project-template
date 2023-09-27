@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-# Edit SRC_NAME to use a memorable name for imports
+# Edit SRC_NAME to use a memorable name for imports. Must match name used in setup.py, since that determines name of *.egg-info
 SRC_NAME=src
 SCRIPTS_NAME=scripts
 # Edit SYSTEM_PYTHON to use another python version
