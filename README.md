@@ -11,4 +11,6 @@ Use `make` or `make lint` to cleanup staged files before commits.
 
 Use `git commit --no-verify` to commit without running pre-commit hooks.
 
+Use `pre-commit autoupdate` to get the latest version of pre-commit hooks.
+
 Use `pre-commit uninstall` to uninstall pre-commit hooks.
