@@ -1,3 +1,21 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# TODO - update name of your project
+name = "custom-pkg"
+dynamic = ["version", "dependencies"]
+
+[tool.setuptools]
+# TODO - list all folders that contain packages to be discovered. 
+# packages here become available via `import <name>`
+packages = ["src"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
 [tool.pytest.ini_options]
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
